@@ -44,6 +44,7 @@
 #include "JSUint16Array.h"
 #include "JSUint32Array.h"
 #include "JSUint8Array.h"
+#include "JSUint8ClampedArray.h"
 #include "JSWebKitCSSMatrix.h"
 #include "JSWebKitPoint.h"
 #include "JSWorker.h"
@@ -542,6 +543,11 @@ JSValue JSDOMWindow::int8Array(ExecState* exec) const
 JSValue JSDOMWindow::uint8Array(ExecState* exec) const
 {
     return getDOMConstructor<JSUint8ArrayConstructor>(exec, this);
+}
+
+JSValue JSDOMWindow::uint8ClampedArray(ExecState* exec) const
+{
+    return getDOMConstructor<JSUint8ClampedArrayConstructor>(exec, this);
 }
  
 JSValue JSDOMWindow::int32Array(ExecState* exec) const

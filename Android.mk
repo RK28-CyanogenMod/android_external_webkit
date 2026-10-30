@@ -425,7 +425,7 @@ LOCAL_CFLAGS += -DSUPPORT_COMPLEX_SCRIPTS=1
 endif
 
 # Build the list of static libraries
-LOCAL_STATIC_LIBRARIES := libxml2 libxslt libhyphenation libskiagpu libpng
+LOCAL_STATIC_LIBRARIES := libxml2 libxslt libhyphenation libskiagpu libpng libz
 ifeq ($(JAVASCRIPT_ENGINE),v8)
 ifeq ($(DYNAMIC_SHARED_LIBV8SO),true)
 LOCAL_SHARED_LIBRARIES += libv8

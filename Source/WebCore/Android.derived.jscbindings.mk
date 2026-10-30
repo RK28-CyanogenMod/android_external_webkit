@@ -322,6 +322,7 @@ GEN := \
     $(intermediates)/html/canvas/JSOESTextureFloat.h \
     $(intermediates)/html/canvas/JSOESVertexArrayObject.h \
     $(intermediates)/html/canvas/JSUint8Array.h \
+    $(intermediates)/html/canvas/JSUint8ClampedArray.h \
     $(intermediates)/html/canvas/JSUint16Array.h \
     $(intermediates)/html/canvas/JSUint32Array.h \
     $(intermediates)/html/canvas/JSWebGLActiveInfo.h \
